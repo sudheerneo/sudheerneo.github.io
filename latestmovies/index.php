@@ -144,7 +144,7 @@
 				Hello, world! This is a toast message.
 			</div>
 		</div>
-	</div>
+	</div><!--toast end -->
 	<footer class="container-fluid text-center sticky" style="z-index: 10; position: fixed; text-align: center;bottom: 0;left: 0;margin-bottom: 0;width: 100%; background-color: black;padding-top: 8px; color: silver;">
 		<p style="color: silver; font-size: 10px;">Copyrights to Robot Technologies</p>
 	</footer>
