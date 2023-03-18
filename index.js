@@ -1,6 +1,13 @@
 $(document).ready(() => {
-  $("#liveToastBtn").on("click", function () {
-    const toast = new bootstrap.Toast($("#liveToast"));
-    toast.show();
-  });
+    // disable scrolling until loader complete task with with css
+    $("body").addClass("stopScrolling");
+
+    // hides loader after 2 sec
+    setTimeout(() => {
+        $("#loader").hide();
+        $("body").removeClass("stopScrolling"); //enable scrolling
+        setTimeout(() => {
+            $(".toast").toast("show");
+        }, 4000);
+    }, 2000);
 });
