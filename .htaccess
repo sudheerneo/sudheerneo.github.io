@@ -1,4 +1,0 @@
-RewriteEngine on
-
-#404 error redirect
-ErrorDocument 404 /404-error.php
