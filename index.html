@@ -933,21 +933,36 @@
                                     ></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
-                                <div
-                                    class="g-recaptcha"
-                                    data-callback="recaptchaCallback"
-                                    data-sitekey="6LcKOzolAAAAAP-7iO2b4zHVymcItYtZlP7ULVPS"
-                                ></div>
 
-                                <div>
-                                    <button
-                                        class="btn btn-outline-primary"
-                                        type="submit"
-                                        id="sendMessageButton"
-                                        disabled
+                                <!-- data-sitekey="6LcKOzolAAAAAP-7iO2b4zHVymcItYtZlP7ULVPS" -->
+                                <div class="container-fluid">
+                                    <div
+                                        class="row justify-content-center w-100"
                                     >
-                                        Send Message
-                                    </button>
+                                        <div
+                                            class="col g-recaptcha"
+                                            data-callback="recaptchaCallback"
+                                            data-theme="light"
+                                            data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                                        ></div>
+                                        <input
+                                            type="hidden"
+                                            id="capctchaResToken"
+                                            name="capctchaResToken"
+                                            value=""
+                                        />
+
+                                        <div class="col pt-2">
+                                            <button
+                                                class="btn btn-lg btn-secondary"
+                                                type="submit"
+                                                id="sendMessageButton"
+                                                disabled
+                                            >
+                                                Send Message
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                             </form>
                         </div>
@@ -1067,7 +1082,6 @@
         <script src="assets/js/lightbox.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch-jsonp/1.0.6/fetch-jsonp.min.js"></script>
         <script src="https://www.google.com/recaptcha/api.js"></script>
-
         <script
             type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"

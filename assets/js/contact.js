@@ -59,9 +59,25 @@ const mailer = async (name, email, subject, message) => {
         bodyHtml: finalMailHtml,
         bodyPlain: `Hi, I've found a enquiry mail from ${name} from ${email} on ${new Date()}. Message conveys as follows Subject: ${subject} and Message: ${message}. Thats it, Thanks for having me Sudheer. Regards, Tech Bot`,
     };
-    const mailData = JSON.stringify(mailObj);
+
+    var recaptoken = $("#capctchaResToken").val();
+    var data = {
+        service_id: "service_hxc0svr",
+        template_id: "template_gpb89th",
+        user_id: "1rydYNLjDt4rAYSHF",
+        contentType: false, // auto-detection
+        processData: false, // no need to parse formData to string
+        accessToken: "WJbPIQD6fwGbvss_ju9_0",
+        template_params: {
+            username: "Sudheer",
+            message: "hello i am testing",
+            "g-recaptcha-response": recaptoken,
+        },
+    };
+
+    const mailData = JSON.stringify(data);
     $.ajax({
-        url: window.location.origin + "/mail/mail.php",
+        url: "https://api.emailjs.com/api/v1.0/email/send",
         type: "POST",
         data: mailData,
         cache: false,
@@ -78,7 +94,8 @@ const mailer = async (name, email, subject, message) => {
             $("#success > .alert-success").append("</div>");
             $("#contactForm").trigger("reset");
         },
-        error: function () {
+        error: function (error) {
+            console.log(error.responseText);
             $("#success").html("<div class='alert alert-danger'>");
             $("#success > .alert-danger")
                 .html(
