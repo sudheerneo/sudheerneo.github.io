@@ -124,7 +124,10 @@
                         <div
                             class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5"
                         >
-                            <a href="#about" class="btn btn-outline-light mr-5"
+                            <a
+                                href="#about"
+                                id="test"
+                                class="btn btn-outline-light mr-5"
                                 >Hire Me</a
                             >
                             <button
@@ -930,11 +933,18 @@
                                     ></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
+                                <div
+                                    class="g-recaptcha"
+                                    data-callback="recaptchaCallback"
+                                    data-sitekey="6LcKOzolAAAAAP-7iO2b4zHVymcItYtZlP7ULVPS"
+                                ></div>
+
                                 <div>
                                     <button
                                         class="btn btn-outline-primary"
                                         type="submit"
                                         id="sendMessageButton"
+                                        disabled
                                     >
                                         Send Message
                                     </button>
@@ -1056,6 +1066,12 @@
         <script src="assets/js/isotope.pkgd.min.js"></script>
         <script src="assets/js/lightbox.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch-jsonp/1.0.6/fetch-jsonp.min.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+        ></script>
         <script src="assets/js/main.js"></script>
         <script src="index.js"></script>
         <!-- Contact Javascript File -->
