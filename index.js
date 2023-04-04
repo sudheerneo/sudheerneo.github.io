@@ -9,18 +9,18 @@ $(document).ready(() => {
     $(".fulscreenBtn").click(() => {
         goFullscreen();
         $(".toast").toast("hide");
+        $("#loader").hide();
+        $("body").removeClass("stopScrolling");
     });
     $(document).keyup((e) => {
         e.key.toLowerCase() === "enter" ? goFullscreen() : 0;
     });
+    $(".toast").toast("show");
     // hides loader after 2 sec
     setTimeout(() => {
         $("#loader").hide();
         $("body").removeClass("stopScrolling"); //enable scrolling
-        setTimeout(() => {
-            $(".toast").toast("show");
-        }, 4000);
-    }, 2000);
+    }, 5000);
 });
 
 const goFullscreen = () => {
