@@ -9,8 +9,6 @@ $(document).ready(() => {
     $(".fulscreenBtn").click(() => {
         goFullscreen();
         $(".toast").toast("hide");
-        $("#loader").hide();
-        $("body").removeClass("stopScrolling");
     });
     $(document).keyup((e) => {
         e.key.toLowerCase() === "enter" ? goFullscreen() : 0;
