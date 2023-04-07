@@ -21,11 +21,17 @@
             }
             .fulscreenBtn {
                 padding: 0rem .9rem; 
-                font-size: .875rem;
+                font-size: .675rem;
                 border-radius: .2rem;
                 color: #fff;
                 background-color: #007bff;
                 border-color: #007bff;
+            }
+            mark{
+                background-color: transparent;
+                border-radius: 3px;
+                padding: 3px;
+                border : 1px solid #007bff;
             }
         </style>
     </head>
@@ -1031,16 +1037,16 @@
         ></a>
 
         <!-- toast -->
-
+    <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center" style="height: 200px;position: absolute; left: 0; right: 0; bottom: 0;">
         <div
             class="toast"
-            style="position: fixed; bottom: 0; left: 0; margin: 10px; z-index: 3000;"
-            data-autohide="true"
+            style=" margin: 0px; z-index: 3000; "
+            data-autohide="false"
             data-delay="5000"
         >
             <div class="toast-header">
                 <strong class="mr-auto">Sudheer</strong>
-                <small>1 mins ago</small></br>
+                <small>5 sec ago</small></br>
                 <button
                     type="button"
                     class="ml-2 mb-1 close"
@@ -1050,15 +1056,12 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="toast-body" style="font-size: 13px;">
-                <p class="mb-3">Hello Visitor!, welcome to my website. I'm Sudheer neo,</p>
-                <div class="d-flex flex-row text-center">
-                    <p>Have a good day. For the best user experience, please press Enter button or enable fullscreen</p>
-                    <button  class="fulscreenBtn  mt-n3"">OK</button>
-                </div>
-                
+            <div class="toast-body d-flex flex-row text-center" style="font-size: 12px; margin-top: 12px;">
+                <p class="p-1">Hello visitor!, Welcome to my webspace. </br>Please press <mark>Enter</mark> button or enable fullscreen</p>
+                <button  class="fulscreenBtn mt-n3"">OK</button>  
             </div>
         </div>
+        </div><!--toast dic end-->
         <!-- loading animation -->
         <div
             id="loader"
