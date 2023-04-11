@@ -28,57 +28,59 @@ $("#name").focus(function () {
 });
 
 const mailer = async (name, email, subject, message) => {
-    const template = await fetch(
-        window.location.origin + "/mail/template.html"
-    );
-    const mail = await template.text();
+    // const template = await fetch(
+    //     window.location.origin + "/mail/template.html"
+    // );
+    // const mail = await template.text();
 
-    const parser = new DOMParser();
-    const mailCode = parser.parseFromString(mail, "text/html");
-    mailCode.querySelector(
-        "#heading"
-    ).innerHTML = `<strong>Hi, I'm your Personal Assistant,<br />Notifying you something important!...</strong >`;
+    // const parser = new DOMParser();
+    // const mailCode = parser.parseFromString(mail, "text/html");
+    // mailCode.querySelector(
+    //     "#heading"
+    // ).innerHTML = `<strong>Hi, I'm your Personal Assistant,<br />Notifying you something important!...</strong >`;
 
-    mailCode.querySelector(
-        "#p1"
-    ).innerHTML = `I have found a enquiry mail from <a href="mailto:${email}" style="text-decoration: none">${name}</a>. Below is a message in detail`;
+    // mailCode.querySelector(
+    //     "#p1"
+    // ).innerHTML = `I have found a enquiry mail from <a href="mailto:${email}" style="text-decoration: none">${name}</a>. Below is a message in detail`;
 
-    mailCode.querySelector(
-        "#p2"
-    ).innerHTML = `Subject:</br>  <strong>${subject}</strong>.`;
+    // mailCode.querySelector(
+    //     "#p2"
+    // ).innerHTML = `Subject:</br>  <strong>${subject}</strong>.`;
 
-    mailCode.querySelector(
-        "#p3"
-    ).innerHTML = `Message:</br>  <strong>${message}</strong>`;
+    // mailCode.querySelector(
+    //     "#p3"
+    // ).innerHTML = `Message:</br>  <strong>${message}</strong>`;
 
-    mailCode.querySelector("#date").textContent = new Date();
-    const finalMailHtml = mailCode.documentElement.outerHTML;
-    // console.log(finalMailHtml);
-    const mailObj = {
-        subject: ` Enquiry email from ${name} on ${new Date()}`,
-        bodyHtml: finalMailHtml,
-        bodyPlain: `Hi, I've found a enquiry mail from ${name} from ${email} on ${new Date()}. Message conveys as follows Subject: ${subject} and Message: ${message}. Thats it, Thanks for having me Sudheer. Regards, Tech Bot`,
-    };
+    // mailCode.querySelector("#date").textContent = new Date();
+    // const finalMailHtml = mailCode.documentElement.outerHTML;
+    // // console.log(finalMailHtml);
+    // const mailObj = {
+    //     subject: ` Enquiry email from ${name} on ${new Date()}`,
+    //     bodyHtml: finalMailHtml,
+    //     bodyPlain: `Hi, I've found a enquiry mail from ${name} from ${email} on ${new Date()}. Message conveys as follows Subject: ${subject} and Message: ${message}. Thats it, Thanks for having me Sudheer. Regards, Tech Bot`,
+    // };
 
     var recaptoken = $("#capctchaResToken").val();
     var data = {
         service_id: "service_hxc0svr",
-        template_id: "template_gpb89th",
-        user_id: "1rydYNLjDt4rAYSHF",
-        contentType: false, // auto-detection
-        processData: false, // no need to parse formData to string
-        accessToken: "WJbPIQD6fwGbvss_ju9_0",
+        template_id: "template_aw9q2f3",
+        user_id: "l_FHF8Vibd5GGsncJ",
         template_params: {
             username: "Sudheer",
-            message: "hello i am testing",
+            message: message,
+            subject: subject,
+            name: name,
+            email: email,
             "g-recaptcha-response": recaptoken,
         },
     };
 
     const mailData = JSON.stringify(data);
+
     $.ajax({
-        url: "https://api.emailjs.com/api/v1.0/email/send",
+        url: `https://api.emailjs.com/api/v1.0/email/send`,
         type: "POST",
+        contentType: "application/json",
         data: mailData,
         cache: false,
         success: function () {
@@ -115,7 +117,7 @@ const mailer = async (name, email, subject, message) => {
         complete: function () {
             setTimeout(function () {
                 $this.prop("disabled", false);
-            }, 1000);
+            }, 3000);
         },
     });
 };

@@ -1,10 +1,6 @@
-() => {
-    emailjs.init("1rydYNLjDt4rAYSHF");
-};
 $(document).ready(() => {
     // disable scrolling until loader complete task with with css
     $("body").addClass("stopScrolling");
-
     // go fullscreen
     $(".fulscreenBtn").click(() => {
         goFullscreen();
