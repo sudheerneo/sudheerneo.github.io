@@ -38,7 +38,7 @@
             o("#videoModal").on("shown.bs.modal", function (a) {
                 o("#video").attr(
                     "src",
-                    t + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0"
+                    t + "&autoplay=1&amp;modestbranding=1&amp;showinfo=0"
                 );
             }),
             o("#videoModal").on("hide.bs.modal", function (a) {
