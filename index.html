@@ -1,1070 +1,694 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Sudheer InfoTech</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="assets/css/plugins.css" />
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-        <style type="text/css">
-            ::-webkit-scrollbar {
-                width: 0; /* Remove scrollbar space */
-                background: transparent; /* Optional: just make scrollbar invisible */
-            }
-            /* Optional: show position indicator in red */
-            ::-webkit-scrollbar-thumb {
-                background: black;
-            }
-            .stopScrolling {
-                height: 100%;
-                overflow: hidden;
-            }
-            .fulscreenBtn {
-                padding: 0rem .9rem; 
-                font-size: .675rem;
-                border-radius: .2rem;
-                color: #fff;
-                background-color: #007bff;
-                border-color: #007bff;
-            }
-            mark{
-                background-color: transparent;
-                border-radius: 3px;
-                padding: 3px;
-                border : 1px solid #007bff;
-            }
-        </style>
-    </head>
-    <body data-spy="scroll" data-target=".navbar" data-offset="51">
-        <nav
-            class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5"
-        >
-            <a href="/" class="navbar-brand ml-lg-3">
-                <h1 class="m-0 display-5">
-                    <span class="text-primary">Sudheer</span>Tech
-                </h1>
-            </a>
-            <button
-                type="button"
-                class="navbar-toggler"
-                data-toggle="collapse"
-                data-target="#navbarCollapse"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
-                <div class="navbar-nav m-auto py-0">
-                    <a href="#home" class="nav-item nav-link active">Home</a>
-                    <a href="#about" class="nav-item nav-link">About</a>
-                    <a href="#skill" class="nav-item nav-link">Skill</a>
-                    <a href="#service" class="nav-item nav-link">Service</a>
-                    <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
-                    <a href="#testimonial" class="nav-item nav-link">Review</a>
-                    <a href="#blog" class="nav-item nav-link">Packages</a>
-                    <a href="#contact" class="nav-item nav-link">Contact</a>
-                </div>
-                <a
-                    href="#contact"
-                    class="btn btn-outline-primary d-none d-lg-block"
-                    >Hire Me</a
-                >
+
+<head>
+    <title>Sudheer InfoTech</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="assets/css/plugins.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <style type="text/css">
+        ::-webkit-scrollbar {
+            width: 0;
+            /* Remove scrollbar space */
+            background: transparent;
+            /* Optional: just make scrollbar invisible */
+        }
+
+        /* Optional: show position indicator in red */
+        ::-webkit-scrollbar-thumb {
+            background: black;
+        }
+
+        .stopScrolling {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .fulscreenBtn {
+            padding: 0rem .9rem;
+            font-size: .675rem;
+            border-radius: .2rem;
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        mark {
+            background-color: transparent;
+            border-radius: 3px;
+            padding: 3px;
+            border: 1px solid #007bff;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="/" class="navbar-brand ml-lg-3">
+            <h1 class="m-0 display-5">
+                <span class="text-primary">Sudheer</span> Neo
+            </h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#skill" class="nav-item nav-link">Skill</a>
+                <a href="#service" class="nav-item nav-link">Service</a>
+                <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+                <a href="#testimonial" class="nav-item nav-link">Review</a>
+                <a href="#blog" class="nav-item nav-link">Packages</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
-        </nav>
-        <div
-            class="modal fade"
-            id="videoModal"
-            tabindex="-1"
-            role="dialog"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true"
-        >
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <button
-                            type="button"
-                            class="close"
-                            data-dismiss="modal"
-                            aria-label="Close"
-                        >
-                            <span aria-hidden="true">&times;</span>
+            <a href="#contact" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>
+        </div>
+    </nav>
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="never"
+                            allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="assets/img/profile.png"
+                        alt="website template image" />
+                    <div class="mask position-absolute top-0 end-0 bottom-0 start-0"
+                        style="background-color: rgba(0, 0, 0, 0.6)"></div>
+                </div>
+                <div class="col-lg-7 text-center text-lg-left">
+                    <h3 class="text-white font-weight-normal mb-3">I'm</h3>
+                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff">
+                        Sudheer Neo
+                    </h1>
+                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                    <div class="typed-text d-none">
+                        Web Designer, Web Developer, Frontend Developer, Backend Developer, Apps Designer, Apps
+                        Developer
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                        <a href="#about" id="test" class="btn btn-outline-light mr-5">Hire Me</a>
+                        <button type="button" class="btn-play" data-toggle="modal"
+                            data-src="https://www.youtube.com/embed/MuMUPuRmVOk?controls=0" data-target="#videoModal">
+                            <span></span>
                         </button>
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe
-                                class="embed-responsive-item"
-                                src=""
-                                id="video"
-                                allowscriptaccess="never"
-                                allow="autoplay"
-                            ></iframe>
-                        </div>
+                        <h5 class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block">
+                            Play Video
+                        </h5>
                     </div>
                 </div>
             </div>
         </div>
-        <div
-            class="container-fluid bg-primary d-flex align-items-center mb-5 py-5"
-            id="home"
-            style="min-height: 100vh"
-        >
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
-                        <img
-                            class="img-fluid w-100 rounded-circle shadow-sm"
-                            src="assets/img/profile.png"
-                            alt="website template image"
-                        />
-                        <div
-                            class="mask position-absolute top-0 end-0 bottom-0 start-0"
-                            style="background-color: rgba(0, 0, 0, 0.6)"
-                        ></div>
-                    </div>
-                    <div class="col-lg-7 text-center text-lg-left">
-                        <h3 class="text-white font-weight-normal mb-3">I'm</h3>
-                        <h1
-                            class="display-3 text-uppercase text-primary mb-2"
-                            style="-webkit-text-stroke: 2px #ffffff"
-                        >
-                            Sudheer Neo
-                        </h1>
-                        <h1
-                            class="typed-text-output d-inline font-weight-lighter text-white"
-                        ></h1>
-                        <div class="typed-text d-none">
-                            Web Designer, Web Developer, Frontend Developer, Backend Developer, Apps Designer, Apps Developer
+    </div>
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6">
+                    About
+                </h1>
+                <h1 class="position-absolute text-uppercase text-primary">
+                    About Me
+                </h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="assets/img/about.jpg" alt="website template image" />
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4">UI/UX Designer &amp; Web Developer</h3>
+                    <p>
+                        We are a startup offering IT, Networking, and Tech
+                        support services at reasonable prices. Our creative
+                        and innovative ideas aim to help your business grow.
+                        Our technological solutions ensure your success.
+                        Partner with
+                        <a href="http://www.sudheerinfo.com">Sudheer InfoTech solutions</a>
+                        for consistent business growth.
+                    </p>
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-2">
+                            <h6>
+                                Name:
+                                <span class="text-secondary">Sudheer babu</span>
+                            </h6>
                         </div>
-                        <div
-                            class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5"
-                        >
-                            <a
-                                href="#about"
-                                id="test"
-                                class="btn btn-outline-light mr-5"
-                                >Hire Me</a
-                            >
-                            <button
-                                type="button" 
-                                class="btn-play"
-                                data-toggle="modal"
-                                data-src="https://www.youtube.com/embed/MuMUPuRmVOk?controls=0"
-                                data-target="#videoModal"
-                            >
-                                <span></span>
-                            </button>
-                            <h5
-                                class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block"
-                            >
-                                Play Video
-                            </h5>
+                        <div class="col-sm-6 py-2">
+                            <h6>
+                                Birthday:
+                                <span class="text-secondary">26 Nov</span>
+                            </h6>
+                        </div>
+                        <div class="col-sm-6 py-2">
+                            <h6>
+                                Degree:
+                                <span class="text-secondary">Masters</span>
+                            </h6>
+                        </div>
+                        <div class="col-sm-6 py-2">
+                            <h6>
+                                Experience:
+                                <span class="text-secondary">8 Years</span>
+                            </h6>
+                        </div>
+                        <div class="col-sm-6 py-2">
+                            <h6>
+                                Phone:
+                                <span class="text-secondary">+91 9640405005</span>
+                            </h6>
+                        </div>
+                        <div class="col-sm-6 py-2">
+                            <h6>
+                                Email:
+                                <span class="text-secondary">sudheerbabu.techie@gmail.com</span>
+                            </h6>
+                        </div>
+                        <div class="col-sm-6 py-2">
+                            <h6>
+                                Address:
+                                <span class="text-secondary">Banjarahills RN-12, Hyd</span>
+                            </h6>
+                        </div>
+                        <div class="col-sm-6 py-2">
+                            <h6>
+                                Freelance:
+                                <span class="text-secondary">Available</span>
+                            </h6>
                         </div>
                     </div>
+                    <a href="#contact" class="btn btn-outline-primary mr-4">Hire Me</a>
+                    <a href="#service" class="btn btn-outline-primary">know More</a>
                 </div>
             </div>
         </div>
-        <div class="container-fluid py-5" id="about">
-            <div class="container">
-                <div
-                    class="position-relative d-flex align-items-center justify-content-center"
-                >
-                    <h1
-                        class="display-1 text-uppercase text-white"
-                        style="-webkit-text-stroke: 1px #dee2e6"
-                    >
-                        About
-                    </h1>
-                    <h1 class="position-absolute text-uppercase text-primary">
-                        About Me
-                    </h1>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col-lg-5 pb-4 pb-lg-0">
-                        <img
-                            class="img-fluid rounded w-100"
-                            src="assets/img/about.jpg"
-                            alt="website template image"
-                        />
-                    </div>
-                    <div class="col-lg-7">
-                        <h3 class="mb-4">UI/UX Designer &amp; Web Developer</h3>
-                        <p>
-                            We are a startup offering IT, Networking, and Tech
-                            support services at reasonable prices. Our creative
-                            and innovative ideas aim to help your business grow.
-                            Our technological solutions ensure your success.
-                            Partner with
-                            <a href="http://www.sudheerinfo.com"
-                                >Sudheer InfoTech solutions</a
-                            >
-                            for consistent business growth.
-                        </p>
-                        <div class="row mb-3">
-                            <div class="col-sm-6 py-2">
-                                <h6>
-                                    Name:
-                                    <span class="text-secondary"
-                                        >Sudheer babu</span
-                                    >
-                                </h6>
-                            </div>
-                            <div class="col-sm-6 py-2">
-                                <h6>
-                                    Birthday:
-                                    <span class="text-secondary">26 Nov</span>
-                                </h6>
-                            </div>
-                            <div class="col-sm-6 py-2">
-                                <h6>
-                                    Degree:
-                                    <span class="text-secondary">Masters</span>
-                                </h6>
-                            </div>
-                            <div class="col-sm-6 py-2">
-                                <h6>
-                                    Experience:
-                                    <span class="text-secondary">8 Years</span>
-                                </h6>
-                            </div>
-                            <div class="col-sm-6 py-2">
-                                <h6>
-                                    Phone:
-                                    <span class="text-secondary"
-                                        >+91 9640405005</span
-                                    >
-                                </h6>
-                            </div>
-                            <div class="col-sm-6 py-2">
-                                <h6>
-                                    Email:
-                                    <span class="text-secondary"
-                                        >sudheerbabu.techie@gmail.com</span
-                                    >
-                                </h6>
-                            </div>
-                            <div class="col-sm-6 py-2">
-                                <h6>
-                                    Address:
-                                    <span class="text-secondary"
-                                        >Banjarahills RN-12, Hyd</span
-                                    >
-                                </h6>
-                            </div>
-                            <div class="col-sm-6 py-2">
-                                <h6>
-                                    Freelance:
-                                    <span class="text-secondary"
-                                        >Available</span
-                                    >
-                                </h6>
-                            </div>
-                        </div>
-                        <a href="#contact" class="btn btn-outline-primary mr-4"
-                            >Hire Me</a
-                        >
-                        <a href="#service" class="btn btn-outline-primary"
-                            >know More</a
-                        >
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
 
-        <div class="container-fluid py-5" id="skill">
-            <div class="container">
-                <div
-                    class="position-relative d-flex align-items-center justify-content-center"
-                >
-                    <h1
-                        class="display-1 text-uppercase text-white"
-                        style="-webkit-text-stroke: 1px #dee2e6"
-                    >
-                        Skills
-                    </h1>
-                    <h1 class="position-absolute text-uppercase text-primary">
-                        My Skills
-                    </h1>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="font-weight-bold">HTML</h6>
-                                <h6 class="font-weight-bold">95%</h6>
-                            </div>
-                            <div class="progress">
-                                <div
-                                    class="progress-bar bg-primary"
-                                    role="progressbar"
-                                    aria-valuenow="95"
-                                    aria-valuemin="0"
-                                    aria-valuemax="100"
-                                ></div>
-                            </div>
+    <div class="container-fluid py-5" id="skill">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6">
+                    Skills
+                </h1>
+                <h1 class="position-absolute text-uppercase text-primary">
+                    My Skills
+                </h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">HTML</h6>
+                            <h6 class="font-weight-bold">95%</h6>
                         </div>
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="font-weight-bold">
-                                    React Framework
-                                </h6>
-                                <h6 class="font-weight-bold">85%</h6>
-                            </div>
-                            <div class="progress">
-                                <div
-                                    class="progress-bar bg-warning"
-                                    role="progressbar"
-                                    aria-valuenow="85"
-                                    aria-valuemin="0"
-                                    aria-valuemax="100"
-                                ></div>
-                            </div>
-                        </div>
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="font-weight-bold">Node JS</h6>
-                                <h6 class="font-weight-bold">90%</h6>
-                            </div>
-                            <div class="progress">
-                                <div
-                                    class="progress-bar bg-danger"
-                                    role="progressbar"
-                                    aria-valuenow="90"
-                                    aria-valuemin="0"
-                                    aria-valuemax="100"
-                                ></div>
-                            </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                                aria-valuemax="100"></div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="font-weight-bold">Javascript</h6>
-                                <h6 class="font-weight-bold">90%</h6>
-                            </div>
-                            <div class="progress">
-                                <div
-                                    class="progress-bar bg-danger"
-                                    role="progressbar"
-                                    aria-valuenow="90"
-                                    aria-valuemin="0"
-                                    aria-valuemax="100"
-                                ></div>
-                            </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">
+                                React Framework
+                            </h6>
+                            <h6 class="font-weight-bold">85%</h6>
                         </div>
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="font-weight-bold">Next JS</h6>
-                                <h6 class="font-weight-bold">95%</h6>
-                            </div>
-                            <div class="progress">
-                                <div
-                                    class="progress-bar bg-dark"
-                                    role="progressbar"
-                                    aria-valuenow="95"
-                                    aria-valuemin="0"
-                                    aria-valuemax="100"
-                                ></div>
-                            </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                                aria-valuemax="100"></div>
                         </div>
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="font-weight-bold">React Native</h6>
-                                <h6 class="font-weight-bold">85%</h6>
-                            </div>
-                            <div class="progress">
-                                <div
-                                    class="progress-bar bg-info"
-                                    role="progressbar"
-                                    aria-valuenow="85"
-                                    aria-valuemin="0"
-                                    aria-valuemax="100"
-                                ></div>
-                            </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Node JS</h6>
+                            <h6 class="font-weight-bold">90%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Javascript</h6>
+                            <h6 class="font-weight-bold">90%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Next JS</h6>
+                            <h6 class="font-weight-bold">95%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">React Native</h6>
+                            <h6 class="font-weight-bold">85%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                                aria-valuemax="100"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid pt-5" id="service">
-            <div class="container">
-                <div
-                    class="position-relative d-flex align-items-center justify-content-center"
-                >
-                    <h1
-                        class="display-1 text-uppercase text-white"
-                        style="-webkit-text-stroke: 1px #dee2e6"
-                    >
-                        Service
-                    </h1>
-                    <h1 class="position-absolute text-uppercase text-primary">
-                        My Services
-                    </h1>
-                </div>
-                <div class="row pb-3">
-                    <div class="col-lg-4 col-md-6 text-center mb-5">
-                        <div
-                            class="d-flex align-items-center justify-content-center mb-4"
-                        >
-                            <i
-                                class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"
-                            ></i>
-                            <h4 class="font-weight-bold m-0">Web Design</h4>
-                        </div>
-                        <p>
-                            Expertly crafted websites that captivate audiences
-                            and drive results. Our web design services deliver
-                            excellence.
-                        </p>
-                        <a
-                            class="border-bottom border-primary text-decoration-none"
-                            href="#contact"
-                            >Know More</a
-                        >
+    </div>
+    <div class="container-fluid pt-5" id="service">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6">
+                    Service
+                </h1>
+                <h1 class="position-absolute text-uppercase text-primary">
+                    My Services
+                </h1>
+            </div>
+            <div class="row pb-3">
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Web Design</h4>
                     </div>
-                    <div class="col-lg-4 col-md-6 text-center mb-5">
-                        <div
-                            class="d-flex align-items-center justify-content-center mb-4"
-                        >
-                            <i
-                                class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"
-                            ></i>
-                            <h4 class="font-weight-bold m-0">
-                                Web Development
+                    <p>
+                        Expertly crafted websites that captivate audiences
+                        and drive results. Our web design services deliver
+                        excellence.
+                    </p>
+                    <a class="border-bottom border-primary text-decoration-none" href="#contact">Know More</a>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">
+                            Web Development
+                        </h4>
+                    </div>
+                    <p>
+                        Our web development services create engaging
+                        websites. We provide custom solutions tailored to
+                        your business needs
+                    </p>
+                    <a class="border-bottom border-primary text-decoration-none" href="#contact">Know More</a>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fab fa-2x fa-android service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Apps Design</h4>
+                    </div>
+                    <p>
+                        Crafting stunning interfaces & immersive
+                        experiences. Perfect blend of design, innovation, &
+                        technology
+                    </p>
+                    <a class="border-bottom border-primary text-decoration-none" href="#contact">Know More</a>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fab fa-2x fa-apple service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">
+                            Apps Development
+                        </h4>
+                    </div>
+                    <p>
+                        Designing & developing mobile apps that stand out.
+                        Quality, usability & performance are top priorities
+                    </p>
+                    <a class="border-bottom border-primary text-decoration-none" href="#contact">Know More</a>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-search service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">SEO</h4>
+                    </div>
+                    <p>
+                        Drive traffic and boost your online visibility with
+                        our SEO services. Enhance your search engine ranking
+                        and reach your target audience
+                    </p>
+                    <a class="border-bottom border-primary text-decoration-none" href="#contact">Know More</a>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-edit service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">
+                            Content Creating
+                        </h4>
+                    </div>
+                    <p>
+                        Content creation drives engagement and conversions.
+                        Our team crafts compelling content that resonates
+                        with your audience
+                    </p>
+                    <a class="border-bottom border-primary text-decoration-none" href="#contact">Know More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid pt-5 pb-3" id="portfolio">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6">
+                    Gallery
+                </h1>
+                <h1 class="position-absolute text-uppercase text-primary">
+                    My Portfolio
+                </h1>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mb-2">
+                    <ul class="list-inline mb-4" id="portfolio-flters">
+                        <li class="btn btn-sm btn-outline-primary m-1 active" data-filter="*">
+                            All
+                        </li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">
+                            Design
+                        </li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">
+                            Development
+                        </li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">
+                            Marketing
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="assets/img/portfolio-1.jpg"
+                            alt="website template image" />
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="assets/img/portfolio-1.jpg" data-lightbox="portfolio"><i
+                                    class="fa fa-plus text-white" style="font-size: 60px"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="assets/img/portfolio-2.jpg"
+                            alt="website template image" />
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="assets/img/portfolio-2.jpg" data-lightbox="portfolio"><i
+                                    class="fa fa-plus text-white" style="font-size: 60px"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="assets/img/portfolio-3.jpg"
+                            alt="website template image" />
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="assets/img/portfolio-3.jpg" data-lightbox="portfolio"><i
+                                    class="fa fa-plus text-white" style="font-size: 60px"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="assets/img/portfolio-4.jpg"
+                            alt="website template image" />
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="assets/img/portfolio-4.jpg" data-lightbox="portfolio"><i
+                                    class="fa fa-plus text-white" style="font-size: 60px"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="assets/img/portfolio-5.jpg"
+                            alt="website template image" />
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="assets/img/portfolio-5.jpg" data-lightbox="portfolio"><i
+                                    class="fa fa-plus text-white" style="font-size: 60px"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="assets/img/portfolio-6.jpg"
+                            alt="website template image" />
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="assets/img/portfolio-6.jpg" data-lightbox="portfolio"><i
+                                    class="fa fa-plus text-white" style="font-size: 60px"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-5" id="testimonial">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6">
+                    Review
+                </h1>
+                <h1 class="position-absolute text-uppercase text-primary">
+                    Clients Say
+                </h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-light mb-4">
+                                The team at Sudheer InfoTech solutions made
+                                the entire process so easy and stress-free.
+                                I would definitely recommend them to anyone
+                                looking for high-quality web development
+                                services.
                             </h4>
+                            <img src="assets/img/ramanujan.jpg" alt="website template image"
+                                class="img-fluid rounded-circle mx-auto mb-3" style="width: 80px; height: 80px" />
+                            <h5 class="font-weight-bold m-0">Ramanujan</h5>
+                            <span>Founder of Total Care Services</span>
                         </div>
-                        <p>
-                            Our web development services create engaging
-                            websites. We provide custom solutions tailored to
-                            your business needs
-                        </p>
-                        <a
-                            class="border-bottom border-primary text-decoration-none"
-                            href="#contact"
-                            >Know More</a
-                        >
-                    </div>
-                    <div class="col-lg-4 col-md-6 text-center mb-5">
-                        <div
-                            class="d-flex align-items-center justify-content-center mb-4"
-                        >
-                            <i
-                                class="fab fa-2x fa-android service-icon bg-primary text-white mr-3"
-                            ></i>
-                            <h4 class="font-weight-bold m-0">Apps Design</h4>
-                        </div>
-                        <p>
-                            Crafting stunning interfaces & immersive
-                            experiences. Perfect blend of design, innovation, &
-                            technology
-                        </p>
-                        <a
-                            class="border-bottom border-primary text-decoration-none"
-                            href="#contact"
-                            >Know More</a
-                        >
-                    </div>
-                    <div class="col-lg-4 col-md-6 text-center mb-5">
-                        <div
-                            class="d-flex align-items-center justify-content-center mb-4"
-                        >
-                            <i
-                                class="fab fa-2x fa-apple service-icon bg-primary text-white mr-3"
-                            ></i>
-                            <h4 class="font-weight-bold m-0">
-                                Apps Development
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-light mb-4">
+                                I was blown away by the level of creativity
+                                displayed by Sudheer InfoTech solutions.
+                                They really went above and beyond to create
+                                a website that exceeded my expectations
                             </h4>
+                            <img src="assets/img/mahesh.jpg" alt="website template image"
+                                class="img-fluid rounded-circle mx-auto mb-3" style="width: 80px; height: 80px" />
+                            <h5 class="font-weight-bold m-0">Mahesh</h5>
+                            <span>CEO of FreeJobAlerts Website</span>
                         </div>
-                        <p>
-                            Designing & developing mobile apps that stand out.
-                            Quality, usability & performance are top priorities
-                        </p>
-                        <a
-                            class="border-bottom border-primary text-decoration-none"
-                            href="#contact"
-                            >Know More</a
-                        >
-                    </div>
-                    <div class="col-lg-4 col-md-6 text-center mb-5">
-                        <div
-                            class="d-flex align-items-center justify-content-center mb-4"
-                        >
-                            <i
-                                class="fa fa-2x fa-search service-icon bg-primary text-white mr-3"
-                            ></i>
-                            <h4 class="font-weight-bold m-0">SEO</h4>
-                        </div>
-                        <p>
-                            Drive traffic and boost your online visibility with
-                            our SEO services. Enhance your search engine ranking
-                            and reach your target audience
-                        </p>
-                        <a
-                            class="border-bottom border-primary text-decoration-none"
-                            href="#contact"
-                            >Know More</a
-                        >
-                    </div>
-                    <div class="col-lg-4 col-md-6 text-center mb-5">
-                        <div
-                            class="d-flex align-items-center justify-content-center mb-4"
-                        >
-                            <i
-                                class="fa fa-2x fa-edit service-icon bg-primary text-white mr-3"
-                            ></i>
-                            <h4 class="font-weight-bold m-0">
-                                Content Creating
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-light mb-4">
+                                I was impressed with the attention to detail
+                                and excellent communication throughout the
+                                entire design process. Sudheer InfoTech
+                                solutions truly delivered
                             </h4>
-                        </div>
-                        <p>
-                            Content creation drives engagement and conversions.
-                            Our team crafts compelling content that resonates
-                            with your audience
-                        </p>
-                        <a
-                            class="border-bottom border-primary text-decoration-none"
-                            href="#contact"
-                            >Know More</a
-                        >
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid pt-5 pb-3" id="portfolio">
-            <div class="container">
-                <div
-                    class="position-relative d-flex align-items-center justify-content-center"
-                >
-                    <h1
-                        class="display-1 text-uppercase text-white"
-                        style="-webkit-text-stroke: 1px #dee2e6"
-                    >
-                        Gallery
-                    </h1>
-                    <h1 class="position-absolute text-uppercase text-primary">
-                        My Portfolio
-                    </h1>
-                </div>
-                <div class="row">
-                    <div class="col-12 text-center mb-2">
-                        <ul class="list-inline mb-4" id="portfolio-flters">
-                            <li
-                                class="btn btn-sm btn-outline-primary m-1 active"
-                                data-filter="*"
-                            >
-                                All
-                            </li>
-                            <li
-                                class="btn btn-sm btn-outline-primary m-1"
-                                data-filter=".first"
-                            >
-                                Design
-                            </li>
-                            <li
-                                class="btn btn-sm btn-outline-primary m-1"
-                                data-filter=".second"
-                            >
-                                Development
-                            </li>
-                            <li
-                                class="btn btn-sm btn-outline-primary m-1"
-                                data-filter=".third"
-                            >
-                                Marketing
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row portfolio-container">
-                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                        <div class="position-relative overflow-hidden mb-2">
-                            <img
-                                class="img-fluid rounded w-100"
-                                src="assets/img/portfolio-1.jpg"
-                                alt="website template image"
-                            />
-                            <div
-                                class="portfolio-btn bg-primary d-flex align-items-center justify-content-center"
-                            >
-                                <a
-                                    href="assets/img/portfolio-1.jpg"
-                                    data-lightbox="portfolio"
-                                    ><i
-                                        class="fa fa-plus text-white"
-                                        style="font-size: 60px"
-                                    ></i
-                                ></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                        <div class="position-relative overflow-hidden mb-2">
-                            <img
-                                class="img-fluid rounded w-100"
-                                src="assets/img/portfolio-2.jpg"
-                                alt="website template image"
-                            />
-                            <div
-                                class="portfolio-btn bg-primary d-flex align-items-center justify-content-center"
-                            >
-                                <a
-                                    href="assets/img/portfolio-2.jpg"
-                                    data-lightbox="portfolio"
-                                    ><i
-                                        class="fa fa-plus text-white"
-                                        style="font-size: 60px"
-                                    ></i
-                                ></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                        <div class="position-relative overflow-hidden mb-2">
-                            <img
-                                class="img-fluid rounded w-100"
-                                src="assets/img/portfolio-3.jpg"
-                                alt="website template image"
-                            />
-                            <div
-                                class="portfolio-btn bg-primary d-flex align-items-center justify-content-center"
-                            >
-                                <a
-                                    href="assets/img/portfolio-3.jpg"
-                                    data-lightbox="portfolio"
-                                    ><i
-                                        class="fa fa-plus text-white"
-                                        style="font-size: 60px"
-                                    ></i
-                                ></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                        <div class="position-relative overflow-hidden mb-2">
-                            <img
-                                class="img-fluid rounded w-100"
-                                src="assets/img/portfolio-4.jpg"
-                                alt="website template image"
-                            />
-                            <div
-                                class="portfolio-btn bg-primary d-flex align-items-center justify-content-center"
-                            >
-                                <a
-                                    href="assets/img/portfolio-4.jpg"
-                                    data-lightbox="portfolio"
-                                    ><i
-                                        class="fa fa-plus text-white"
-                                        style="font-size: 60px"
-                                    ></i
-                                ></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                        <div class="position-relative overflow-hidden mb-2">
-                            <img
-                                class="img-fluid rounded w-100"
-                                src="assets/img/portfolio-5.jpg"
-                                alt="website template image"
-                            />
-                            <div
-                                class="portfolio-btn bg-primary d-flex align-items-center justify-content-center"
-                            >
-                                <a
-                                    href="assets/img/portfolio-5.jpg"
-                                    data-lightbox="portfolio"
-                                    ><i
-                                        class="fa fa-plus text-white"
-                                        style="font-size: 60px"
-                                    ></i
-                                ></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                        <div class="position-relative overflow-hidden mb-2">
-                            <img
-                                class="img-fluid rounded w-100"
-                                src="assets/img/portfolio-6.jpg"
-                                alt="website template image"
-                            />
-                            <div
-                                class="portfolio-btn bg-primary d-flex align-items-center justify-content-center"
-                            >
-                                <a
-                                    href="assets/img/portfolio-6.jpg"
-                                    data-lightbox="portfolio"
-                                    ><i
-                                        class="fa fa-plus text-white"
-                                        style="font-size: 60px"
-                                    ></i
-                                ></a>
-                            </div>
+                            <img src="assets/img/anita.jpg" alt="website template image"
+                                class="img-fluid rounded-circle mx-auto mb-3" style="width: 80px; height: 80px" />
+                            <h5 class="font-weight-bold m-0">Anita</h5>
+                            <span>Creative Director @ PrintOnika</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid py-5" id="testimonial">
-            <div class="container">
-                <div
-                    class="position-relative d-flex align-items-center justify-content-center"
-                >
-                    <h1
-                        class="display-1 text-uppercase text-white"
-                        style="-webkit-text-stroke: 1px #dee2e6"
-                    >
-                        Review
-                    </h1>
-                    <h1 class="position-absolute text-uppercase text-primary">
-                        Clients Say
-                    </h1>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="owl-carousel testimonial-carousel">
-                            <div class="text-center">
-                                <i
-                                    class="fa fa-3x fa-quote-left text-primary mb-4"
-                                ></i>
-                                <h4 class="font-weight-light mb-4">
-                                    The team at Sudheer InfoTech solutions made
-                                    the entire process so easy and stress-free.
-                                    I would definitely recommend them to anyone
-                                    looking for high-quality web development
-                                    services.
-                                </h4>
-                                <img
-                                    src="assets/img/ramanujan.jpg"
-                                    alt="website template image"
-                                    class="img-fluid rounded-circle mx-auto mb-3"
-                                    style="width: 80px; height: 80px"
-                                />
-                                <h5 class="font-weight-bold m-0">Ramanujan</h5>
-                                <span>Founder of Total Care Services</span>
-                            </div>
-                            <div class="text-center">
-                                <i
-                                    class="fa fa-3x fa-quote-left text-primary mb-4"
-                                ></i>
-                                <h4 class="font-weight-light mb-4">
-                                    I was blown away by the level of creativity
-                                    displayed by Sudheer InfoTech solutions.
-                                    They really went above and beyond to create
-                                    a website that exceeded my expectations
-                                </h4>
-                                <img
-                                    src="assets/img/mahesh.jpg"
-                                    alt="website template image"
-                                    class="img-fluid rounded-circle mx-auto mb-3"
-                                    style="width: 80px; height: 80px"
-                                />
-                                <h5 class="font-weight-bold m-0">Mahesh</h5>
-                                <span>CEO of FreeJobAlerts Website</span>
-                            </div>
-                            <div class="text-center">
-                                <i
-                                    class="fa fa-3x fa-quote-left text-primary mb-4"
-                                ></i>
-                                <h4 class="font-weight-light mb-4">
-                                    I was impressed with the attention to detail
-                                    and excellent communication throughout the
-                                    entire design process. Sudheer InfoTech
-                                    solutions truly delivered
-                                </h4>
-                                <img
-                                    src="assets/img/anita.jpg"
-                                    alt="website template image"
-                                    class="img-fluid rounded-circle mx-auto mb-3"
-                                    style="width: 80px; height: 80px"
-                                />
-                                <h5 class="font-weight-bold m-0">Anita</h5>
-                                <span>Creative Director @ PrintOnika</span>
-                            </div>
+    </div>
+    <div class="container-fluid pt-5" id="blog">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6">
+                    Packages
+                </h1>
+                <h1 class="position-absolute text-uppercase text-primary">
+                    Packages
+                </h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="assets/img/blog-1.jpg" alt="website template image" />
+                        <div class="blog-date">
+                            <h4 class="font-weight-bold mb-n1">0</h4>
+                            <small class="text-white text-uppercase">Month</small>
                         </div>
                     </div>
+                    <h5 class="font-weight-medium mb-4">
+                        Trial Package. No need to pay single rupee for
+                        experiencing our services.
+                    </h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" href="#contact">Know More</a>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="assets/img/blog-2.jpg" alt="website template image" />
+                        <div class="blog-date">
+                            <h4 class="font-weight-bold mb-n1">10K</h4>
+                            <small class="text-white text-uppercase">Month</small>
+                        </div>
+                    </div>
+                    <h5 class="font-weight-medium mb-4">
+                        Basic Package. Just Pay 10K per month based on your
+                        Project needs
+                    </h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" href="#contact">know More</a>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="assets/img/blog-3.jpg" alt="website template image" />
+                        <div class="blog-date">
+                            <h4 class="font-weight-bold mb-n1">∞</h4>
+                            <small class="text-white text-uppercase">Project</small>
+                        </div>
+                    </div>
+                    <h5 class="font-weight-medium mb-4">
+                        Proffesional Package. Prices may vary depending on
+                        client requirements
+                    </h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" href="#contact">know More</a>
                 </div>
             </div>
         </div>
-        <div class="container-fluid pt-5" id="blog">
-            <div class="container">
-                <div
-                    class="position-relative d-flex align-items-center justify-content-center"
-                >
-                    <h1
-                        class="display-1 text-uppercase text-white"
-                        style="-webkit-text-stroke: 1px #dee2e6"
-                    >
-                        Packages
-                    </h1>
-                    <h1 class="position-absolute text-uppercase text-primary">
-                        Packages
-                    </h1>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 mb-5">
-                        <div class="position-relative mb-4">
-                            <img
-                                class="img-fluid rounded w-100"
-                                src="assets/img/blog-1.jpg"
-                                alt="website template image"
-                            />
-                            <div class="blog-date">
-                                <h4 class="font-weight-bold mb-n1">0</h4>
-                                <small class="text-white text-uppercase"
-                                    >Month</small
-                                >
-                            </div>
-                        </div>
-                        <h5 class="font-weight-medium mb-4">
-                            Trial Package. No need to pay single rupee for
-                            experiencing our services.
-                        </h5>
-                        <a
-                            class="btn btn-sm btn-outline-primary py-2"
-                            href="#contact"
-                            >Know More</a
-                        >
-                    </div>
-                    <div class="col-lg-4 mb-5">
-                        <div class="position-relative mb-4">
-                            <img
-                                class="img-fluid rounded w-100"
-                                src="assets/img/blog-2.jpg"
-                                alt="website template image"
-                            />
-                            <div class="blog-date">
-                                <h4 class="font-weight-bold mb-n1">10K</h4>
-                                <small class="text-white text-uppercase"
-                                    >Month</small
-                                >
-                            </div>
-                        </div>
-                        <h5 class="font-weight-medium mb-4">
-                            Basic Package. Just Pay 10K per month based on your
-                            Project needs
-                        </h5>
-                        <a
-                            class="btn btn-sm btn-outline-primary py-2"
-                            href="#contact"
-                            >know More</a
-                        >
-                    </div>
-                    <div class="col-lg-4 mb-5">
-                        <div class="position-relative mb-4">
-                            <img
-                                class="img-fluid rounded w-100"
-                                src="assets/img/blog-3.jpg"
-                                alt="website template image"
-                            />
-                            <div class="blog-date">
-                                <h4 class="font-weight-bold mb-n1">∞</h4>
-                                <small class="text-white text-uppercase"
-                                    >Project</small
-                                >
-                            </div>
-                        </div>
-                        <h5 class="font-weight-medium mb-4">
-                            Proffesional Package. Prices may vary depending on
-                            client requirements
-                        </h5>
-                        <a
-                            class="btn btn-sm btn-outline-primary py-2"
-                            href="#contact"
-                            >know More</a
-                        >
-                    </div>
-                </div>
+    </div>
+    <!-- Contact Start -->
+    <div class="container-fluid py-5" id="contact">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6">
+                    Contact
+                </h1>
+                <h1 class="position-absolute text-uppercase text-primary">
+                    Contact Me
+                </h1>
             </div>
-        </div>
-        <!-- Contact Start -->
-        <div class="container-fluid py-5" id="contact">
-            <div class="container">
-                <div
-                    class="position-relative d-flex align-items-center justify-content-center"
-                >
-                    <h1
-                        class="display-1 text-uppercase text-white"
-                        style="-webkit-text-stroke: 1px #dee2e6"
-                    >
-                        Contact
-                    </h1>
-                    <h1 class="position-absolute text-uppercase text-primary">
-                        Contact Me
-                    </h1>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="contact-form text-center">
-                            <div id="success"></div>
-                            <form
-                                name="sentMessage"
-                                id="contactForm"
-                                novalidate="novalidate"
-                            >
-                                <div class="form-row">
-                                    <div class="control-group col-sm-6">
-                                        <input
-                                            type="text"
-                                            class="form-control p-4"
-                                            id="name"
-                                            placeholder="Your Name"
-                                            required="required"
-                                            data-validation-required-message="Please enter your name"
-                                        />
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <div class="control-group col-sm-6">
-                                        <input
-                                            type="email"
-                                            class="form-control p-4"
-                                            id="email"
-                                            placeholder="Your Email"
-                                            required="required"
-                                            data-validation-required-message="Please enter your email"
-                                        />
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <input
-                                        type="text"
-                                        class="form-control p-4"
-                                        id="subject"
-                                        placeholder="Subject"
-                                        required="required"
-                                        data-validation-required-message="Please enter a subject"
-                                    />
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form text-center">
+                        <div id="success"></div>
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <div class="form-row">
+                                <div class="control-group col-sm-6">
+                                    <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
+                                        required="required" data-validation-required-message="Please enter your name" />
                                     <p class="help-block text-danger"></p>
                                 </div>
-                                <div class="control-group">
-                                    <textarea
-                                        class="form-control py-3 px-4"
-                                        rows="5"
-                                        id="message"
-                                        placeholder="Message"
+                                <div class="control-group col-sm-6">
+                                    <input type="email" class="form-control p-4" id="email" placeholder="Your Email"
                                         required="required"
-                                        data-validation-required-message="Please enter your message"
-                                    ></textarea>
+                                        data-validation-required-message="Please enter your email" />
                                     <p class="help-block text-danger"></p>
                                 </div>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control p-4" id="subject" placeholder="Subject"
+                                    required="required" data-validation-required-message="Please enter a subject" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
+                                    required="required"
+                                    data-validation-required-message="Please enter your message"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
 
-                                <!--og key data-sitekey="6LcKOzolAAAAAP-7iO2b4zHVymcItYtZlP7ULVPS" -->
-                                <!--test key data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" -->
-                                <div class="container-fluid">
-                                    <div
-                                        class="row justify-content-center w-100"
-                                    >
-                                        <div
-                                            class="col g-recaptcha"
-                                            data-callback="recaptchaCallback"
-                                            data-theme="light"
-                                            data-sitekey="6LcKOzolAAAAAP-7iO2b4zHVymcItYtZlP7ULVPS"
-                                        ></div>
-                                        <input
-                                            type="hidden"
-                                            id="capctchaResToken"
-                                            name="capctchaResToken"
-                                            value=""
-                                        />
+                            <!--og key data-sitekey="6LcKOzolAAAAAP-7iO2b4zHVymcItYtZlP7ULVPS" -->
+                            <!--test key data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" -->
+                            <div class="container-fluid">
+                                <div class="row justify-content-center w-100">
+                                    <div class="col g-recaptcha" data-callback="recaptchaCallback" data-theme="light"
+                                        data-sitekey="6LcKOzolAAAAAP-7iO2b4zHVymcItYtZlP7ULVPS"></div>
+                                    <input type="hidden" id="capctchaResToken" name="capctchaResToken" value="" />
 
-                                        <div class="col pt-2">
-                                            <button
-                                                class="btn btn-lg btn-secondary"
-                                                type="submit"
-                                                id="sendMessageButton"
-                                                disabled
-                                            >
-                                                Send Message
-                                            </button>
-                                        </div>
+                                    <div class="col pt-2">
+                                        <button class="btn btn-lg btn-secondary" type="submit" id="sendMessageButton"
+                                            disabled>
+                                            Send Message
+                                        </button>
                                     </div>
                                 </div>
-                            </form>
-                        </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Contact End -->
+    </div>
+    <!-- Contact End -->
 
-        <div
-            class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5"
-        >
-            <div class="container text-center py-5">
-                <div class="d-flex justify-content-center mb-4">
-                    <a class="btn btn-light btn-social mr-2" href="#"
-                        ><i class="fab fa-twitter"></i
-                    ></a>
-                    <a class="btn btn-light btn-social mr-2" href="#"
-                        ><i class="fab fa-facebook-f"></i
-                    ></a>
-                    <a class="btn btn-light btn-social mr-2" href="#"
-                        ><i class="fab fa-linkedin-in"></i
-                    ></a>
-                    <a class="btn btn-light btn-social" href="#"
-                        ><i class="fab fa-instagram"></i
-                    ></a>
-                </div>
-                <div class="d-flex justify-content-center mb-3">
-                    <a class="text-white" href="#">Privacy</a>
-                    <span class="px-3">|</span>
-                    <a class="text-white" href="#">Terms</a>
-                    <span class="px-3">|</span>
-                    <a class="text-white" href="#">FAQs</a>
-                    <span class="px-3">|</span>
-                    <a class="text-white" href="#">Help</a>
-                </div>
-                <p class="m-0">
-                    &copy;
-                    <a class="text-white font-weight-bold" href="/"
-                        >Sudhdeer InfoTech Services</a
-                    >. All Rights Reserved. Designed by
-                    <a
-                        class="text-white font-weight-bold"
-                        target="_blank"
-                        rel="nofollow noopener"
-                        href="/"
-                        >Sudheer</a
-                    >
-                </p>
+    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
             </div>
+            <div class="d-flex justify-content-center mb-3">
+                <a class="text-white" href="#">Privacy</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Terms</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">FAQs</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Help</a>
+            </div>
+            <p class="m-0">
+                &copy;
+                <a class="text-white font-weight-bold" href="/">Sudhdeer InfoTech Services</a>. All Rights Reserved.
+                Designed by
+                <a class="text-white font-weight-bold" target="_blank" rel="nofollow noopener" href="/">Sudheer</a>
+            </p>
         </div>
-        <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
-        <a
-            href="javascript:void(0)"
-            class="btn btn-outline-dark px-0 back-to-top"
-            ><i class="fa fa-angle-double-up"></i
-        ></a>
+    </div>
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+    <a href="javascript:void(0)" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
-        <!-- toast -->
-    <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center" style="height: 200px;position: absolute; left: 0; right: 0; bottom: 0;">
-        <div
-            class="toast"
-            style=" margin: 0px; z-index: 3000; "
-            data-autohide="true"
-            data-delay="5000"
-        >
+    <!-- toast -->
+    <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center"
+        style="height: 200px;position: absolute; left: 0; right: 0; bottom: 0;">
+        <div class="toast" style=" margin: 0px; z-index: 3000; " data-autohide="true" data-delay="5000">
             <div class="toast-header">
                 <strong class="mr-auto">Sudheer</strong>
                 <small>5 sec ago</small></br>
-                <button
-                    type="button"
-                    class="ml-2 mb-1 close"
-                    data-dismiss="toast"
-                    aria-label="Close"
-                >
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="toast-body d-flex flex-row text-center" style="font-size: 12px; margin-top: 12px;">
-                <p class="p-1">Hello visitor!, Welcome to my webspace. </br>Please press <mark>Enter</mark> button or enable fullscreen</p>
-                <button  class="fulscreenBtn mt-n3"">OK</button>  
+                <p class="p-1">Hello visitor!, Welcome to my webspace. </br>Please press <mark>Enter</mark> button or
+                    enable fullscreen</p>
+                <button class="fulscreenBtn mt-n3"">OK</button>  
             </div>
         </div>
         </div><!--toast dic end-->
         <!-- loading animation -->
         <div
-            id="loader"
-            style="
+            id=" loader" style="
                 top: 0;
                 bottom: 0;
                 left: 0;
@@ -1076,33 +700,29 @@
                 align-items: center;
                 justify-content: center;
                 z-index: 1000;
-            "
-        >
-            <div class="text-center" style="color: white">
-                <i
-                    class="fa fa-spinner fa-spin text-center"
-                    style="font-size: 24px"
-                ></i
-                ><br />
-                please wait....
+            ">
+                    <div class="text-center" style="color: white">
+                        <i class="fa fa-spinner fa-spin text-center" style="font-size: 24px"></i><br />
+                        please wait....
+                    </div>
             </div>
-        </div>
 
-        <script src="assets/js/jquery.min.js"></script>
-        <!--Bootstrap 4.4.1-->
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/typed.min.js"></script>
-        <script src="assets/js/easing.min.js"></script>
-        <script src="assets/js/waypoints.min.js"></script>
-        <script src="assets/js/owl.carousel.min.js"></script>
-        <script src="assets/js/isotope.pkgd.min.js"></script>
-        <script src="assets/js/lightbox.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch-jsonp/1.0.6/fetch-jsonp.min.js"></script>
-        <script src="https://www.google.com/recaptcha/api.js"></script>
-        <script src="assets/js/main.js"></script>
-        <script src="index.js"></script>
-        <!-- Contact Javascript File -->
-        <script src="assets/js/contact.js"></script>
-        <script src="assets/js/jqBootstrapValidation.min.js"></script>
-    </body>
+            <script src="assets/js/jquery.min.js"></script>
+            <!--Bootstrap 4.4.1-->
+            <script src="assets/js/bootstrap.bundle.min.js"></script>
+            <script src="assets/js/typed.min.js"></script>
+            <script src="assets/js/easing.min.js"></script>
+            <script src="assets/js/waypoints.min.js"></script>
+            <script src="assets/js/owl.carousel.min.js"></script>
+            <script src="assets/js/isotope.pkgd.min.js"></script>
+            <script src="assets/js/lightbox.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch-jsonp/1.0.6/fetch-jsonp.min.js"></script>
+            <script src="https://www.google.com/recaptcha/api.js"></script>
+            <script src="assets/js/main.js"></script>
+            <script src="index.js"></script>
+            <!-- Contact Javascript File -->
+            <script src="assets/js/contact.js"></script>
+            <script src="assets/js/jqBootstrapValidation.min.js"></script>
+</body>
+
 </html>
