@@ -1,24 +1,24 @@
-$(document).ready(() => {
-  // disable scrolling until loader complete task with with css
-  $("body").addClass("stopScrolling");
-  // go fullscreen
-  $(".fulscreenBtn").click(() => {
-    goFullscreen();
-    $(".toast").toast("hide");
-  });
-  $(document).keyup((e) => {
-    e.key.toLowerCase() === "enter" ? goFullscreen() : 0;
-  });
-  $(".toast").toast("show");
-  // hides loader after 2 sec
-  console.log("hide timer started");
-  setTimeout(() => {
-    $(".loader").hide();
-    console.log("loading hidden now");
+// $(document).ready(() => {
+//   // disable scrolling until loader complete task with with css
+//   $("body").addClass("stopScrolling");
+//   // go fullscreen
+//   $(".fulscreenBtn").click(() => {
+//     goFullscreen();
+//     $(".toast").toast("hide");
+//   });
+//   $(document).keyup((e) => {
+//     e.key.toLowerCase() === "enter" ? goFullscreen() : 0;
+//   });
+//   $(".toast").toast("show");
+//   // hides loader after 2 sec
+//   console.log("hide timer started");
+//   setTimeout(() => {
+//     $(".loader").hide();
+//     console.log("loading hidden now");
 
-    $("body").removeClass("stopScrolling"); //enable scrolling
-  }, 5000);
-});
+//     $("body").removeClass("stopScrolling"); //enable scrolling
+//   }, 5000);
+// });
 
 const goFullscreen = () => {
   const body = document.documentElement;
